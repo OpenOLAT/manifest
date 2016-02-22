@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:manifest xmlns:ns8="http://www.imsglobal.org/xsd/imsqti_metadata_v2p1" xmlns:ns2="http://www.imsglobal.org/xsd/imscp_v1p1" xmlns:ns3="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/qtiv2p1_imscpv1p2_v1p0.xsd">
+    <ns2:metadata>
+        <ns2:schema>QTIv2.1 Package</ns2:schema>
+        <ns2:schemaversion>1.0.0</ns2:schemaversion>
+    </ns2:metadata>
+    <ns2:organizations/>
+    <ns2:resources>
+        <ns2:resource identifier="ID-234" type="imsqti_item_xmlv2p1" href="id234.xml">
+            <ns2:metadata>
+                <ns8:qtiMetadata>
+                    <ns8:itemTemplate>false</ns8:itemTemplate>
+                    <ns8:composite>false</ns8:composite>
+                    <ns8:solutionAvailable>true</ns8:solutionAvailable>
+                    <ns8:toolName>OpenOLAT</ns8:toolName>
+                    <ns8:toolVersion>11.0</ns8:toolVersion>
+                    <ns8:toolVendor>frentix</ns8:toolVendor>
+                </ns8:qtiMetadata>
+                <ns3:lom>
+                    <ns3:general>
+                        <ns3:title>
+                            <ns3:langstring xml:lang="en">Hello world</ns3:langstring>
+                        </ns3:title>
+                    </ns3:general>
+                </ns3:lom>
+            </ns2:metadata>
+        </ns2:resource>
+    </ns2:resources>
+</ns2:manifest>

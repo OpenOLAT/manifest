@@ -1,0 +1,5 @@
+xjc -verbose -d src/main/java -p org.olat.imscp.xml.manifest src/main/resources/imscp_v1p2.xsd
+
+xjc -verbose -d src/main/java -p org.olat.imsmd.xml.manifest src/main/resources/imsmd_v1p2p4.xsd
+
+xjc -verbose -d src/main/java -p org.olat.imsqti.xml.manifest src/main/resources/imsqti_metadata_v2p1.xsd

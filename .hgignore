@@ -1,0 +1,36 @@
+syntax: glob
+
+# java deployment assets
+*.class
+*.jar
+
+# mvn build trees
+target/*
+bin/*
+
+# editor backup files
+*~
+*.bak
+*.swp
+
+# sundry useless files
+*.out
+
+# hg merge reject files
+*.rej
+
+# hg originals arising from reverts
+*.orig
+
+# Mac idiosyncrasies
+.DS_Store
+
+#ignore olat/.classpath file at this gets created by maven
+.classpath
+.project
+.settings/*
+system/*
+.idea/*
+
+
+
