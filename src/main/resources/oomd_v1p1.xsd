@@ -1,0 +1,86 @@
+<xs:schema xmlns="http://www.openolat.org/xsd/oomd_v1p1"
+    targetNamespace="http://www.openolat.org/xsd/oomd_v1p1"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    version="OpenOLAT metadata 1.0"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+	<xs:import namespace = "http://www.w3.org/XML/1998/namespace" schemaLocation = "http://www.w3.org/2001/03/xml.xsd"/>
+	
+    <xs:complexType name="OpenOLATMetadata.Type" mixed="false">
+        <xs:annotation>
+            <xs:documentation source="umldocumentation">
+                <p align="left">This is the container for OpenOLAT-specific meta-data. This structure is designed to be used as an extension to the top-level categories within the IEEE LOM. All of its child elements are defined as local.</p>
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="questionType" minOccurs="0" maxOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="sc"/>
+                        <xs:enumeration value="mc"/>
+                        <xs:enumeration value="truefalse"/>
+                        <xs:enumeration value="fib"/>
+                        <xs:enumeration value="kprim"/>
+                        <xs:enumeration value="essay"/>
+                        <xs:enumeration value="hotspot"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="difficulty" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:double">
+            			<xs:minInclusive value="0.0"/>
+            			<xs:maxInclusive value="1.0"/>
+            		</xs:restriction>
+            	</xs:simpleType>
+            </xs:element>
+            <xs:element name="standardDeviation" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:double">
+            			<xs:minInclusive value="0.0"/>
+            			<xs:maxInclusive value="1.0"/>
+            		</xs:restriction>
+            	</xs:simpleType>
+            </xs:element>
+            <xs:element name="discriminationIndex" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:double">
+            			<xs:minInclusive value="-1.0"/>
+            			<xs:maxInclusive value="1.0"/>
+            		</xs:restriction>
+            	</xs:simpleType>
+            </xs:element>
+            <xs:element name="distractors" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:int">
+            			<xs:minInclusive value="0"/>
+            		</xs:restriction>
+            	</xs:simpleType>
+            </xs:element>
+            <xs:element name="assessmentType" minOccurs="0" maxOccurs="1">
+            	<xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="summative"/>
+                        <xs:enumeration value="formative"/>
+                        <xs:enumeration value="both"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="usage" minOccurs="0" maxOccurs="1">
+            	<xs:simpleType>
+            		<xs:restriction base="xs:int">
+            			<xs:minInclusive value="0"/>
+            		</xs:restriction>
+            	</xs:simpleType>
+            </xs:element>
+            <xs:element name="masterIdentifier" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:string"/>
+            	</xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+	
+	<xs:element name="ooMetadata" type="OpenOLATMetadata.Type"/>
+
+</xs:schema>

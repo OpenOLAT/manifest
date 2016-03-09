@@ -5,6 +5,8 @@
 // Généré le : 2016.02.22 à 10:45:38 AM CET 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.imsglobal.org/xsd/imsmd_v1p2", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED,
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.imsglobal.org/xsd/imsmd_v1p2",
+	elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED,
+	location = "http://www.imsglobal.org/xsd/imsmd_v1p2p4.xsd",
 	xmlns = { @javax.xml.bind.annotation.XmlNs(namespaceURI = "http://www.imsglobal.org/xsd/imsmd_v1p2", prefix = "imsmd")})
 package org.olat.imsmd.xml.manifest;

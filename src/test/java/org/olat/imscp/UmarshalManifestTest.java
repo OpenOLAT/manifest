@@ -21,6 +21,7 @@ package org.olat.imscp;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
@@ -52,9 +53,17 @@ public class UmarshalManifestTest {
 		Assert.assertNotNull(lom);
 	}
 	
+	@Test
+	public void unmarshal_3_ooSchema() {
+		ManifestType manifest =  read("imsmanifest_3.xml");
+		Assert.assertNotNull(manifest);
+		List<Object> metadatas = manifest.getResources().getResource().get(0).getMetadata().getAny();
+		Assert.assertNotNull(metadatas.get(1));
+	}
+	
 	public static ManifestType read(String manifestFile) {
         try(InputStream in = UmarshalManifestTest.class.getResourceAsStream(manifestFile)) {
-			JAXBContext context = JAXBContext.newInstance("org.olat.imscp.xml.manifest:org.olat.imsqti.xml.manifest:org.olat.imsmd.xml.manifest");
+			JAXBContext context = JAXBContext.newInstance("org.olat.imscp.xml.manifest:org.olat.imsqti.xml.manifest:org.olat.imsmd.xml.manifest:org.olat.oo.xml.manifest");
 			Unmarshaller marshaller = context.createUnmarshaller();
 			//marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 			//marshaller.setProperty(Marshaller.JAXB_SCHEMA_LOCATION, "http://www.imsglobal.org/xsd/imscp_v1p1 http://www.imsglobal.org/xsd/qti/qtiv2p1/qtiv2p1_imscpv1p2_v1p0.xsd");
