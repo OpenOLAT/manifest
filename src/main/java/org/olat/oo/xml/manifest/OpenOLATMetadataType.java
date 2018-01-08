@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2016.03.08 à 06:52:56 PM CET 
+// Généré le : 2018.01.08 à 04:08:22 PM CET 
 //
 
 
@@ -91,6 +91,12 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
+ *         &lt;element name="qpoolIdentifier" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
  *         &lt;element name="masterIdentifier" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -114,6 +120,7 @@ import javax.xml.bind.annotation.XmlType;
     "distractors",
     "assessmentType",
     "usage",
+    "qpoolIdentifier",
     "masterIdentifier"
 })
 public class OpenOLATMetadataType {
@@ -125,6 +132,7 @@ public class OpenOLATMetadataType {
     protected Integer distractors;
     protected String assessmentType;
     protected Integer usage;
+    protected String qpoolIdentifier;
     protected String masterIdentifier;
 
     /**
@@ -293,6 +301,30 @@ public class OpenOLATMetadataType {
      */
     public void setUsage(Integer value) {
         this.usage = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété qpoolIdentifier.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getQpoolIdentifier() {
+        return qpoolIdentifier;
+    }
+
+    /**
+     * Définit la valeur de la propriété qpoolIdentifier.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setQpoolIdentifier(String value) {
+        this.qpoolIdentifier = value;
     }
 
     /**

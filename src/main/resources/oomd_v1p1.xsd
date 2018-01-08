@@ -73,6 +73,11 @@
             		</xs:restriction>
             	</xs:simpleType>
             </xs:element>
+            <xs:element name="qpoolIdentifier" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:string"/>
+            	</xs:simpleType>
+            </xs:element>
             <xs:element name="masterIdentifier" minOccurs="0" maxOccurs="1" >
             	<xs:simpleType>
             		<xs:restriction base="xs:string"/>
