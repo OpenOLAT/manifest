@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.01.08 à 04:08:22 PM CET 
+// Généré le : 2018.01.09 à 01:47:54 PM CET 
 //
 
 
@@ -11,6 +11,7 @@ package org.olat.oo.xml.manifest;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlType;
+import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
@@ -103,6 +104,12 @@ import javax.xml.bind.annotation.XmlType;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
+ *         &lt;element name="copiedAt" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}dateTime">
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -121,7 +128,8 @@ import javax.xml.bind.annotation.XmlType;
     "assessmentType",
     "usage",
     "qpoolIdentifier",
-    "masterIdentifier"
+    "masterIdentifier",
+    "copiedAt"
 })
 public class OpenOLATMetadataType {
 
@@ -134,6 +142,7 @@ public class OpenOLATMetadataType {
     protected Integer usage;
     protected String qpoolIdentifier;
     protected String masterIdentifier;
+    protected XMLGregorianCalendar copiedAt;
 
     /**
      * Obtient la valeur de la propriété questionType.
@@ -349,6 +358,30 @@ public class OpenOLATMetadataType {
      */
     public void setMasterIdentifier(String value) {
         this.masterIdentifier = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété copiedAt.
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public XMLGregorianCalendar getCopiedAt() {
+        return copiedAt;
+    }
+
+    /**
+     * Définit la valeur de la propriété copiedAt.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public void setCopiedAt(XMLGregorianCalendar value) {
+        this.copiedAt = value;
     }
 
 }

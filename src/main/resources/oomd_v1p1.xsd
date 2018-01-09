@@ -83,6 +83,11 @@
             		<xs:restriction base="xs:string"/>
             	</xs:simpleType>
             </xs:element>
+            <xs:element name="copiedAt" minOccurs="0" maxOccurs="1">
+            <xs:simpleType>
+            		<xs:restriction base="xs:dateTime"/>
+            	</xs:simpleType>
+            </xs:element>
         </xs:sequence>
     </xs:complexType>
 	
