@@ -23,6 +23,12 @@
                         <xs:enumeration value="kprim"/>
                         <xs:enumeration value="essay"/>
                         <xs:enumeration value="hotspot"/>
+                        <xs:enumeration value="drawing"/>
+                        <xs:enumeration value="upload"/>
+                        <xs:enumeration value="match"/>
+                        <xs:enumeration value="matchdraganddrop"/>
+                        <xs:enumeration value="numerical"/>
+                        <xs:enumeration value="unkown"/>
                     </xs:restriction>
                 </xs:simpleType>
             </xs:element>
@@ -86,6 +92,21 @@
             <xs:element name="copiedAt" minOccurs="0" maxOccurs="1">
             <xs:simpleType>
             		<xs:restriction base="xs:dateTime"/>
+            	</xs:simpleType>
+            </xs:element>
+            <xs:element name="creator" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:string"/>
+            	</xs:simpleType>
+            </xs:element>
+            <xs:element name="topic" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:string"/>
+            	</xs:simpleType>
+            </xs:element>
+            <xs:element name="additionalInformations" minOccurs="0" maxOccurs="1" >
+            	<xs:simpleType>
+            		<xs:restriction base="xs:string"/>
             	</xs:simpleType>
             </xs:element>
         </xs:sequence>

@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.01.09 à 01:47:54 PM CET 
+// Généré le : 2018.01.16 à 11:09:26 AM CET 
 //
 
 
@@ -42,6 +42,12 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *               &lt;enumeration value="kprim"/>
  *               &lt;enumeration value="essay"/>
  *               &lt;enumeration value="hotspot"/>
+ *               &lt;enumeration value="drawing"/>
+ *               &lt;enumeration value="upload"/>
+ *               &lt;enumeration value="match"/>
+ *               &lt;enumeration value="matchdraganddrop"/>
+ *               &lt;enumeration value="numerical"/>
+ *               &lt;enumeration value="unkown"/>
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
@@ -110,6 +116,24 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
+ *         &lt;element name="creator" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="topic" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
+ *         &lt;element name="additionalInformations" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -129,7 +153,10 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "usage",
     "qpoolIdentifier",
     "masterIdentifier",
-    "copiedAt"
+    "copiedAt",
+    "creator",
+    "topic",
+    "additionalInformations"
 })
 public class OpenOLATMetadataType {
 
@@ -143,6 +170,9 @@ public class OpenOLATMetadataType {
     protected String qpoolIdentifier;
     protected String masterIdentifier;
     protected XMLGregorianCalendar copiedAt;
+    protected String creator;
+    protected String topic;
+    protected String additionalInformations;
 
     /**
      * Obtient la valeur de la propriété questionType.
@@ -382,6 +412,78 @@ public class OpenOLATMetadataType {
      */
     public void setCopiedAt(XMLGregorianCalendar value) {
         this.copiedAt = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété creator.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCreator() {
+        return creator;
+    }
+
+    /**
+     * Définit la valeur de la propriété creator.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCreator(String value) {
+        this.creator = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété topic.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getTopic() {
+        return topic;
+    }
+
+    /**
+     * Définit la valeur de la propriété topic.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setTopic(String value) {
+        this.topic = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété additionalInformations.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAdditionalInformations() {
+        return additionalInformations;
+    }
+
+    /**
+     * Définit la valeur de la propriété additionalInformations.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAdditionalInformations(String value) {
+        this.additionalInformations = value;
     }
 
 }
