@@ -1,5 +1,7 @@
 # Manifest JAXB WS for OpenOLAT
 
+This is a compiled version of several XML schemas to manage "imsmanifest.xml" files
+
 
 ```bash
 xjc -verbose -d src/main/java -p org.olat.imscp.xml.manifest src/main/resources/imscp_v1p2.xsd
