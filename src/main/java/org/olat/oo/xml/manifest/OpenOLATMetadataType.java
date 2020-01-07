@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.8-b130911.1802 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2018.01.16 à 11:09:26 AM CET 
+// Généré le : 2020.01.07 à 03:42:25 PM CET 
 //
 
 
@@ -98,6 +98,13 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *             &lt;/restriction>
  *           &lt;/simpleType>
  *         &lt;/element>
+ *         &lt;element name="correctionTime" minOccurs="0">
+ *           &lt;simpleType>
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}int">
+ *               &lt;minInclusive value="0"/>
+ *             &lt;/restriction>
+ *           &lt;/simpleType>
+ *         &lt;/element>
  *         &lt;element name="qpoolIdentifier" minOccurs="0">
  *           &lt;simpleType>
  *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
@@ -151,6 +158,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "distractors",
     "assessmentType",
     "usage",
+    "correctionTime",
     "qpoolIdentifier",
     "masterIdentifier",
     "copiedAt",
@@ -167,6 +175,7 @@ public class OpenOLATMetadataType {
     protected Integer distractors;
     protected String assessmentType;
     protected Integer usage;
+    protected Integer correctionTime;
     protected String qpoolIdentifier;
     protected String masterIdentifier;
     protected XMLGregorianCalendar copiedAt;
@@ -340,6 +349,30 @@ public class OpenOLATMetadataType {
      */
     public void setUsage(Integer value) {
         this.usage = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété correctionTime.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
+     */
+    public Integer getCorrectionTime() {
+        return correctionTime;
+    }
+
+    /**
+     * Définit la valeur de la propriété correctionTime.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
+     */
+    public void setCorrectionTime(Integer value) {
+        this.correctionTime = value;
     }
 
     /**
