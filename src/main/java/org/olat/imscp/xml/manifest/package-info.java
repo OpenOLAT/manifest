@@ -5,8 +5,8 @@
 // Generated on: 2015.05.28 at 01:45:06 PM CEST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.imsglobal.org/xsd/imscp_v1p1",
-	elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED,
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.imsglobal.org/xsd/imscp_v1p1",
+	elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED,
 	location = "http://www.imsglobal.org/xsd/imscp_v1p2.xsd",
-	xmlns = { @javax.xml.bind.annotation.XmlNs(namespaceURI = "http://www.imsglobal.org/xsd/imscp_v1p1", prefix = "") })
+	xmlns = { @jakarta.xml.bind.annotation.XmlNs(namespaceURI = "http://www.imsglobal.org/xsd/imscp_v1p1", prefix = "") })
 package org.olat.imscp.xml.manifest;

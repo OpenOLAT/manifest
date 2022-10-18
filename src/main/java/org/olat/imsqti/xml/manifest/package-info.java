@@ -5,8 +5,8 @@
 // Généré le : 2016.02.22 à 10:45:49 AM CET 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.imsglobal.org/xsd/imsqti_metadata_v2p1",
-	elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED,
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.imsglobal.org/xsd/imsqti_metadata_v2p1",
+	elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED,
 	location = "http://www.imsglobal.org/xsd/qti/qtiv2p1/imsqti_metadata_v2p1.xsd",
-	xmlns = { @javax.xml.bind.annotation.XmlNs(namespaceURI = "http://www.imsglobal.org/xsd/imsqti_metadata_v2p1", prefix = "imsqti") })
+	xmlns = { @jakarta.xml.bind.annotation.XmlNs(namespaceURI = "http://www.imsglobal.org/xsd/imsqti_metadata_v2p1", prefix = "imsqti") })
 package org.olat.imsqti.xml.manifest;

@@ -12,9 +12,9 @@ xjc -verbose -d src/main/java -p org.olat.oo.xml.manifest src/main/resources/oom
 
 
 ```java
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.openolat.org/xsd/oomd_v1p1",
-	elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED,
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.openolat.org/xsd/oomd_v1p1",
+	elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED,
 	location = "http://www.openolat.org/xsd/oomd_v1p1.xsd",
-	xmlns = { @javax.xml.bind.annotation.XmlNs(namespaceURI = "http://www.openolat.org/xsd/oomd_v1p1", prefix = "oomd") })
+	xmlns = { @jakarta.xml.bind.annotation.XmlNs(namespaceURI = "http://www.openolat.org/xsd/oomd_v1p1", prefix = "oomd") })
 package org.olat.oo.xml.manifest;
 ```

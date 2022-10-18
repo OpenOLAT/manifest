@@ -5,5 +5,5 @@
 // Généré le : 2020.01.07 à 03:42:25 PM CET 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.openolat.org/xsd/oomd_v1p1", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.openolat.org/xsd/oomd_v1p1", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package org.olat.oo.xml.manifest;
