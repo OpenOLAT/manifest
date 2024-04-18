@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.openolat.imscp</groupId>
 	<artifactId>manifest</artifactId>
-	<version>2.0.0</version>
+	<version>3.0.0</version>
 	<packaging>jar</packaging>
 	<name>Manifest</name>
 	<url>http://www.openolat.org/</url>
@@ -95,12 +95,12 @@
 		<dependency>
 			<groupId>jakarta.xml.bind</groupId>
 			<artifactId>jakarta.xml.bind-api</artifactId>
-			<version>4.0.0</version>
+			<version>4.0.2</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.13</version>
+			<version>4.13.2</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
